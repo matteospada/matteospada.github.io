@@ -1,0 +1,88 @@
+body {
+    background-color: #FFDE59;
+}
+
+.navbar {
+  justify-content: flex-start;
+}
+
+
+#colonnax {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.searchBar {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%
+} 
+
+
+.md-form.mt-0{
+    width:500px;
+    display:flex;
+    align-items: center;  
+  }
+  
+  .material-icons.mdc-button__icon{
+    position:absolute;
+  }
+  
+  .mdc-button__icon + input{
+    padding-left: 25px;
+  }
+
+  .jumbotron {
+    background-color: transparent;
+    padding-top: 1.5em;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+
+  }
+
+  .margin-footer {
+    margin-top: 2.3rem;
+  }
+
+.material-icons.mdc-button__icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+}
+
+div {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-copyright {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#result {
+  padding-top: 10px;
+}
+
+.logo {
+  position: relative;
+  bottom: 25px;
+}
+
+
+.arrow {
+  position: relative;
+  right: 60px;
+  top: 7px;
+}
+
+.main-box {
+  height: 350px;
+  width: 700px;
+}
