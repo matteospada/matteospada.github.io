@@ -8,7 +8,7 @@ $('#search-input').keypress(async function (event) {
         var query = $("#search-input").val()
         $("#search-input").val("")
         url = "https://itunes.apple.com/search?media=podcast&country=IT&term=" + query
-        url = "https://api.rss2json.com/v1/api.json?rss_url="+url
+        url = "https://cors-anywhere.herokuapp.com/"+url
         var data = await $.get(url, function (data) {
              var itunesData = data
              return itunesData
@@ -24,9 +24,7 @@ $('#search-input').keypress(async function (event) {
        });
 
        var title = episodeInfo.feed.title
-       console.log(title)
        var mp3Path = episodeInfo.items[0].enclosure.link;
-       console.log(mp3Path)
        
        if (!mp3Path.startsWith('https')) { 
         $("#result").text("❌ " + title + " non può essere riprodotto"); 
