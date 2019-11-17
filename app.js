@@ -10,14 +10,12 @@ $('#search-input').keypress(async function (event) {
         url = "https://cors-anywhere.herokuapp.com/"+url
   
 
-        var data = await $.get(url, function (data, status) {
-             getStatus = status
+        var data = await $.get(url, function (data) {
              var itunesData = data
              return itunesData
         });
         
         var converToJson = await JSON.parse(data)
-        console.log("Result count -->"+ converToJson.resultCount)
         
         if(!converToJson.resultCount == "0"){
         
@@ -29,8 +27,6 @@ $('#search-input').keypress(async function (event) {
             var XMLData = data
             return XMLData
        });
-
-       console.log(status)
 
        var title = episodeInfo.feed.title
        var mp3Path = episodeInfo.items[0].enclosure.link;
