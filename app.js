@@ -8,7 +8,7 @@ $('#search-input').keypress(async function (event) {
         var query = $("#search-input").val()
         $("#search-input").val("")
         url = "https://itunes.apple.com/search?media=podcast&country=IT&term=" + query
-        
+        url = "https://api.rss2json.com/v1/api.json?rss_url="+url
         var data = await $.get(url, function (data) {
              var itunesData = data
              return itunesData
