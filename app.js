@@ -4,6 +4,7 @@ $('#search-input').keypress(async function (event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if (keycode == '13') {
 
+        $("#result").text("⏳ Sto cercando il podcast...")
         var query = $("#search-input").val()
         $("#search-input").val("")
         url = "https://itunes.apple.com/search?media=podcast&country=IT&term=" + query
