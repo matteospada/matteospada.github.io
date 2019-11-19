@@ -124,21 +124,3 @@ a:active {
 
 } 
 }
-
-@media screen and (max-width: 400px) {
-  .searchBar {
-    margin-top: 5%;
-    margin-right: 0%;
-    margin-left: 0%;
-} 
-
-.form-control {
-  width: 80%;
-}
-
-  .jumbotron {
-    margin-top: 30%;
-    width: 360px
-  }
-
-}
