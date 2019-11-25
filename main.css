@@ -1,13 +1,28 @@
+html, body { height: 100%; margin: 0; }
 
 body {
     background-color: #FFDE59;
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .navbar {
   justify-content: flex-start;
 }
 
+.fill50 { 
+    min-height: 50%;
+    height: 50%;
+}
+.fill20 { 
+  min-height: 20%;
+  height: 20%;
+}
+
+.fill30 { 
+  min-height: 30%;
+  height: 30%;
+}
 
 #colonnax {
     border-color: black;
@@ -21,10 +36,11 @@ body {
     margin-right: 20%;
     margin-left: 20%
 } 
-
+.altezza {
+    height: 100px;
+}
 
 .md-form.mt-0{
-    width:500px;
     display:flex;
     align-items: center;  
   }
@@ -84,17 +100,21 @@ div {
   top: 7px;
 }
 
-.main-box {
-  height: 350px;
-  width: 700px;
+.form-control {
+  border-radius: 15px;
 }
 
+
+.main-box-height {
+  height: 600px;
+}
+/*
 .footer-position {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-}
+}*/
 
 a:link {
 	color: black;
@@ -121,6 +141,25 @@ a:active {
     margin-top: 5%;
     margin-right: 0%;
     margin-left: 0%
+  }
+}
 
-} 
+
+@media (orientation: landscape) {
+
+  .arrow {
+    visibility: hidden;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .arrow {
+      visibility: hidden;
+  }
+
+  .display-4  {
+    font-size: 1.5rem;
+  }
 }

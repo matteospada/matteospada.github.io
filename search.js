@@ -1,4 +1,3 @@
-
 //Bind keypress event to textbox
 $('#search-input').keypress(async function (event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
