@@ -88,18 +88,6 @@ div {
   padding-top: 10px;
 }
 
-.logo {
-  position: relative;
-  bottom: 25px;
-}
-
-
-.arrow {
-  position: relative;
-  right: 60px;
-  top: 7px;
-}
-
 .form-control {
   border-radius: 15px;
 }
@@ -142,14 +130,6 @@ a:active {
     margin-right: 0%;
     margin-left: 0%
   }
-}
-
-
-@media (orientation: landscape) {
-
-  .arrow {
-    visibility: hidden;
-}
 }
 
 
