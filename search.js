@@ -1,4 +1,5 @@
 //Bind keypress event to textbox
+
 $('#search-input').keypress(async function (event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if (keycode == '13') {
@@ -32,7 +33,7 @@ $('#search-input').keypress(async function (event) {
        var mp3Path = episodeInfo.items[0].enclosure.link;
        
        if (!mp3Path.startsWith('https')) { 
-        $("#result").text("❌ " + title + " non può essere riprodotto"); 
+        $("#result").html("<p>❌ " + title + " non può essere riprodotto, vuoi <a href='#modal' data-toggle='modal' data-target='#exampleModal'> sapere perché?</a></p>") 
        } else {
         $("#result").text("✔️" + title + " può essere riprodotto"); 
        }
@@ -42,3 +43,6 @@ $('#search-input').keypress(async function (event) {
     }
     event.stopPropagation();
 });
+
+
+//("❌ " + title + " non può essere riprodotto, vuoi"

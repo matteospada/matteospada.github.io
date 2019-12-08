@@ -262,6 +262,28 @@
                                 aria-label="Search" id="search-input">
                         </div>
                         <div id="result"> </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"><b>Maggiori informazioni</b></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Podcast Player può riprodurre moltissimi podcast. <br>Purtroppo però, per via di una <a href="https://developer.amazon.com/it/docs/custom-skills/audioplayer-interface-reference.html#audio-stream-requirements" target="_blank" rel="noopener noreferrer">limitazione</a> imposta da Amazon,
+                                            non è possibile riprodurre trasmissioni ospitate su server che non utlizzano il protocollo <b>https</b>. <br>Mi dispiace che
+                                            il tuo podcast preferito sia tra queste.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
