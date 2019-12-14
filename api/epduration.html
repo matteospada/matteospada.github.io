@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script>
+    function getURL() {
+        var url = window.location.href;
+        var mp3Path = getSecondPart(url)        
+        var au = document.createElement('audio');
+        au.src = mp3Path
+
+// Once the metadata has been loaded, display the duration in the console
+        au.addEventListener('loadedmetadata', function(){
+    // Obtain the duration in seconds of the audio file (with milliseconds as well, a float value)
+        var duration = au.duration;
+	    document.body.innerHTML += duration
+ 
+},false);
+document.body.innerHTML
+}
+
+    function getSecondPart(str) {
+    return str.split('?')[1];
+}
+    </script>
+    <meta charset="UTF-8">
+    <title>Podcast Player API</title>
+</head>
+
+<body onload="getURL()">
+</body>
+
+</html>
