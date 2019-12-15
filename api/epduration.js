@@ -6,7 +6,10 @@ function getURL() {
     au.addEventListener('loadedmetadata', function () {
 
         var duration = au.duration;
-        document.body.innerHTML += duration
+        var node = document.createElement("p");                
+        var textnode = document.createTextNode(duration);   
+        node.appendChild(textnode);                           
+        document.body.appendChild(node);
 
     }, false);
     document.body.innerHTML
