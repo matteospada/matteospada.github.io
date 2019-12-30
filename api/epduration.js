@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         au.addEventListener('loadedmetadata', function () {
 
             var duration = au.duration;
+            duration = parseInt(duration, 10)
             var node = document.createElement("p");
             var textnode = document.createTextNode(duration);
             node.appendChild(textnode);
