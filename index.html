@@ -1,332 +1,89 @@
 <!DOCTYPE html>
-<html lang="it">
-
+<html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153574226-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>matteospada.it</title>
+    <meta name="description" content="Personal website">
+    <meta name="author" content="Matteo Spada">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 
-        gtag('config', 'UA-153574226-1');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/matteospada/podcast_player_icons/podcast_player_sm.png"
-        type="image/gif" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
-    <title>Podcast Player</title>
-    <meta name="description"
-        content="Sito di supporto per la Skill Podcast Player, fai una ricerca e scopri se il tuo podcast preferito può essere riprodotto.">
+    <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <div class="row fill30">
-        <div class=" col-xl-1" id=colonna> </div>
-        <div class="col-xl-10" id=colonna>
-
-            <div>
-                <nav class="navbar navbar-light">
-                    <a class="navbar-brand" target="_blank"
-                        href="https://www.amazon.it/Matteo-Spada-Podcast-Player/dp/B07YCJFQQ7/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1I6P7JT95HJCK&keywords=podcast+player&qid=1573986805&sprefix=podcast+pla%2Caps%2C196&sr=8-1">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="108px" height="108px"
-                            viewBox="0 0 108 108" enable-background="new 0 0 108 108" xml:space="preserve">
-                            <image id="image0" width="108" height="108" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-                        AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAA
-                        CXBIWXMAAA7EAAAOxAGVKw4bAAAqYUlEQVR42u3deYwk12Hf8V/1MT33uTt7zO5yD+3BW6REihQV
-                        yrp8yglsyDAUWzEMxEiC5I84dgwkQRAkiB0kBmIgTuQgsZMgtnI7hu3EsWzZli2TFCXxEMUll7vc
-                        Xe59zX10d1VX1csfs8vd2Z2Z7e561VX95vsxDIo7szXVA858+7169cozZz5vBAAAuloh6xMAAADJ
-                        EXQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDA
-                        AQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEA
-                        cABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQA
-                        ABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQd
-                        AAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABB
-                        BwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA
-                        0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAH
-                        EHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDA
-                        AQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEA
-                        cABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQA
-                        ABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAaWsTwBAc+p+rIvXAk3PhppfDLW4HGtp
-                        JVKtFic6bm9vQcODRQ0NFDQ2UtLEaEl7dvaor5f3+0A3IehADvlBrG99p6qvv7akV49Xdf6yr+m5
-                        qKPnMD5S0r5dPdo5WdGxD/Tqc98zqokxfmUAeeWZM583WZ8EAOn8ZV///f/O6MRpX9/6zoqCRg5+
-                        ND2pt6ciz/NkjFF/r6dnnuzX3/6J7dq7uyfrswNwB4IOZGilGumX/sMV/e6fzGl2rqFCoahCIT9T
-                        3eVSWaVS8Z4/N8Zo22hBn/v+Ef34XxrXQH+xjaMDsImgAxn5+X99Uf/1d2/Iv2MkXiyV5MnL+tQk
-                        SZ7nqdJTkbfJ6RhjNNjn6W/9xDb96A+MZX3KwJZG0IEO++KXrumLv35ZfnD3j56nUik/16h7ymUV
-                        i82NvI0xGh709Hd/ars++8nRrE8d2JIIOtAhF674+sLPnNKlq8G6H/e8QtMBTVuhsDo6b53Rgb1l
-                        /co/2aPJiXLWLwPYUvJzsQ5w2L/8tSv61BeObxhzSbm6dl4qtjtT4OnshVDf95Nn9W+/NJ31ywC2
-                        FEboQIqMkf7yT5/Ut95Yvu/nlkr5GNGuXjvvkeclv5Z/9GCP/uM/36veSn7erACu4qcMSMmV64Ge
-                        /qE3moq5l7PRuY2YS9I7ZwJ96sdP68QZP+uXBTgvP79FAIecOF3Vp7/wluYXw6Y+v2ApoDYUi3Z/
-                        LdR86cd++pxeeu3+b2wAtI+gA5Z9/fVl/dBff0dBo/ktWT0vHz+KpWLR2uj8TsZ4+tl/Nqc/fHEp
-                        65cIOCsfv0UAR7z46pL+ys+eVBi1sjQlP6PztBbmGSNJBf2jX5rXH3yNqANpIOiAJS+/tqSf/LlT
-                        Mi0+K8Ur5CPontIL+q3jel5B//hfLejrr69k/XIB5xB0wIL3Lvn6iZ97V3EbDz7Ly85wxZSm228d
-                        +/YL9vSzvzCr85dZKAfYRNABC37kb76jqKVp9tvSimir0trUxhhzz33tRgX91N+/pjBM9uhXALcR
-                        dCChv/YPzjS9mv1uxuQj6J7SPA9v3WMvV4v66X96NeuXDjiDoAMJfPlr8/rjl+bb/vt5iLkkFQrp
-                        TbdvdtxXjsf67T9ayPrlA04g6ECbgobR3/n5s4mOkZf9ZAqW7z1fc+xNgu55nv7Fv1tQrc7UO5BU
-                        Tn6dAN3nb/zD0wqCpDsn5+NHsJjiSvv77oJnivqZX2DqHUgqH79NgC7z+tvL+trLi4mPk4cpd8/z
-                        Ut3YppltbV9/O9YLr1az/lYAXY2gA234e794TsZCi/MQ9LSf8lZs4vie5+kX//1M1t8KoKsRdKBF
-                        33h9USfPuLMxSiHF6XZjjApNjv5vTBf0zTcYpQPtIuhAi37+31yUsTA8z8PoXFpd4Z6Wll6hJ/3C
-                        rzBKB9pF0IEWnDxb1ZsnV3Kyt5sNXqpPejMtfqeuTXs6e4Ed5IB2EHSgBV/8jasyMpKFCOZhgJ7m
-                        dHs7r9HzPH3xN+az+4YAXYygAy346surm6DY2X89+6Kn/Rz2di4rfOONIKtvB9DVCDrQpC//+ZwW
-                        lxqr/+LICve0n8Pe6pS7JIVRQX/wAo9YBVpF0IEm/Y//c+eCLTdG6Gm/p/DU3sY7//v3CTrQKoIO
-                        NOn143dExo2eN7XpSyJtbqR36r2o898MoMsRdKAJl68Fml9s3P4Dk3TL13w8Bz39a+jt/b26X9D0
-                        XKO9vwxsUQQdaMIf/vn82sFmwg4mfzuQXCeu4ccJvlG/85XlTn47gK5H0IEmvPTa2mu6XsIiZz82
-                        74wkr/PbJ+pZnz7QVQg60IQzF9duSWpjH/esNbslazLtv/O5cIXr6EArCDrQhOvToeUj5uAdQQ5O
-                        YTMzC3m4MAF0D4IONGGluna0mHRBm5d0zt6CTvQ8TrB4sBHk/B0HkDMEHbiP2YVQcRxbPaaNh7sk
-                        1oFFcUnf+NTqTLsDzSLowH00GmbNXWpWbkHPQc87o/0Ruud5Wli0+0YKcBlBB+7DD+4aJToS4zzc
-                        B38/cwQdaBpBB+5jceWuoFuZLs9DTNO/jm8SbsBzbYbNZYBmEXTgPqLwrihZaXEOFsV14hq658mY
-                        9kfZMZfQgaYRdGCL6tRbCsvrCQFsgKADLcvDdHn3iA3DbKATCDqwVVl4wExzXyb7ywvAVkDQgVZZ
-                        GKBvpcYRdKAzCDqQiewj17lr6FxEBzqBoANIlcnBmxdgKyDoQMvcWBTXqZlwjyl3oCMIOtAiW89V
-                        yX7k2qmiJ7sXHUBzCDrQIluPEc/6gWudXKwWRQQdSBtBB1pkq4OZj887GPSYETqQOoIOtMpW0DO+
-                        ttzJKf+YETqQOoIOtKrgxqK41Z53anMZgg6kjaADLbK3ajv7yJm4U6P0rC8wAO4j6EBG8nA3V9yx
-                        e9c8FsYBKSPoQIuMpfvQt1TQJUVxmPXLBZxG0IGW2Ypg9kXvZNANDzcHUkXQgRbZXBKX+Si9g/us
-                        R+zpDqSKoAMtMhaLnvWta7ExHTsHR+4NAHKLoAOtstq/7EetHXtP4XlqhI2sXy7gLIIOZCjrEbrU
-                        2V3ceJQqkB6CDrTKsbnjTkY2jlgYB6SFoAMtsjmozsMIvZOL1YxMBzezAbYWgg60qODZHaJnHnVj
-                        Onb7mud5akTcjw6kgaADLbMbv8yDrg5Pu3M/OpAKgg60yPaM8dYLOgvjgDQQdKBFth+2ZnJw61oU
-                        RZ27H91b/XoA7CLoQIuMzZ1lpDzsACupsyPnkPvRAesIOtAy+wXOw/PCuY4OdDeCDrTK8ip3KR/X
-                        0cMOTruL1e6AdQQdaJGXwgg9zsm92Z0cpUchQQdsIuhAi9JJr0ntyK3oaNDjOBczE4ArCDrQIi+l
-                        BuVhlN7JafeCJzUYpQPWEHQgJ0wORuhSZ28piyJWuwO2EHSgRWltk2pysuFKGIYdG6UbY7gnHbCE
-                        oAMtSmGR+/vycPuakRR16LYyj2ekA9YQdKBF1jeWuUMerqNLnZ12N3GUizcyQLcj6EDL0otuXsIW
-                        xx2cCvc8BY0g65cMdD2CDrQs3VF0Xm7l6uQK9CjKxxsZoJsRdKBFaec2L08jM8Z0bPMXzxOjdCAh
-                        gg60KuWi52XaXVodpXdqxiCMGjI5WUMAdCOCDrQs/ejk5RY2Iynq0J7rnjz5gZ/1Swa6FkEH2pHy
-                        qDUv0+6S1Ag7two9NhH3pQNtIuhAG1K8c231+Df/Ly8ajc7cK+6x4h1oG0EH2tGB1uZl2l2Sotgo
-                        7Niqd6MgYLMZoFUEHcipPE27S7cWyHXmnKIoyN3rB/KOoAPt6NBseN6iFjQ6NEr3WCAHtIqgA20w
-                        6kxo83QLm7T6BqPRqajLSB36PgMuIOhAGzq1mZsxJndRD6NQYYduZcvZBAWQawQdaEMnt2fN27S7
-                        JDUaIbeXATlD0IE2eF7nom5Mnm5guy1oNHLzdDgABB3oCnFOR8NBEOTukgCwVRF0oF0dHJwaE3fs
-                        un1r3wIjP2gozuPJAVsMQQfa1tmIxXE+R+nGGAW+z0gdyBhBB9rU6eeWmzjO1Xawa85NUp2ROpAp
-                        gg60qeNx9fK54v19xsj32eENyApBBxLo9IDUxHHHZwZaPEMFAVEHskDQgUQ6H9e83/9tJPlBkNtr
-                        /oCrCDqQQDbXtE1XjID9oKEw528+AJcQdCABk9HGKnEc5XzqfVWj0VCjEXbFuQLdjqADiZjOX0i/
-                        qRtG6dLq3u9Bo0HUgZQRdCChrDK1utlMd0Q9jmP5vq8o6o7zBboRQQeSynDkGXXRwjMjKWgEjNaB
-                        lBB0IKE4y1Gyye8OchuJokj1IGDBHGAZQQcsyHK8GcVRprMEbTFGjUbj5u1tTMMDNhB0wIIsp5A9
-                        eQqjMOtvQVviOJYfBDef2tZlb0qAnCHogA05GGVGOTiHJOde930FjUbuN84B8qqU9QkALjAyMsbI
-                        87zsziGOZDwv03NIKooiRVEkLwxVLBbV19u9rwXoNEbogCV5eBJa1KVT73czxigMQ20fZ8wBNIug
-                        A7bk5BqwK1EH0BqCDlhijMnFwi5jTNfdygYgOYIOWJSHaXdpdfU4t4MBWwtBByzK6mEt6+mWB7gA
-                        sIOgA1aZvFxKl7R6PT0vswYA0kXQAcuM8jXVHYVcTwe2AoIOWGbiOGejYsPKd2ALIOhACvL2VFNW
-                        vgPuI+hACoyJlO0jW+61uvKdqAOuIuhASvK0OO4Wog64i6ADKclrOIk64CaCDqTI5HRzF6IOuIeg
-                        AymKTZS3S+m3zy2OV+9Tz+O1AQAtI+hAqjzFObsv/U7GGKIOOIKgAykzcaw4R1vCroeoA92PoAMd
-                        kK+NZta3GvX8ziYA2BxBBzrBxLldIHenKIp4ShvQpQg60CFxl0xpx3F0c6vY7jhfAKsIOtAxpmtG
-                        v8YYhWHYNecLgKADHWVM3FWLz+I4UsyDXYCuQNCBDuu2UW9sjMKwwYI5IOcIOtBxpqtG6bdEUcTt
-                        bUCOEXQgA3EcdWUYb21EE8csmgPyhqADGYlNlMsnsjV17vGtRXPsBw/kBUEHsmJuPTe9e8VxrDBi
-                        NTyQBwQdyJAxRnG3LzYz5ua96yycA7LkmTOf79JJP8CeJX9cb1//iOrhmGLjrfmYMUbLKymHykt+
-                        CBcN9BVUKNzxzfGkkuoa67uih3e+mPXpAblC0LHlnZ55TBeXn5HnUdVuEjcW9NyB31K54Gd9KkAu
-                        EHR0NT8o68TFCe3a1mjr7y/7ozpf/ZQKxLwrReGyHt72+4mOMT64oFKBzXPQ/UpZnwCQxI3FPv3O
-                        n4/q8OEPtPX3x8bG1NdPzLtVsTSoF05/Qn693vYxvvvRr2l8cCHrlwIkxqI4bFnFQkG9fX1ZnwYS
-                        6uvvz/oUgFxghI4tK4pjXbl8OevTAAArGKED6GrduOMekAaCDqCrcXcCsIopd2xZnqTpmVmJzVC6
-                        Wk+lV0NDg1mfBpA5gg5nHdl5Rnsmrm36Of/rq7s0PRtkfapI4OlHPT15eHrTz7m2sE3HLx5e/4OM
-                        8OEIgg5nDfevaHJ4ZtPP+Z6nIn3py5NZnyraNDBQ0vc8+bY8b/Pr6DW/svEHuQYPR3ANHVvaoV3z
-                        +ujjtaxPA20olQv6wmfeu2/Mga2CETq2vE8/cUEHd23TV1+b1NUZozDs7ieguW6gv6z9uyJ9/9On
-                        1Vdpb4dAwEUEHZB0cOe0Dn7f6nVYv1HSL/3PYy0fY3BoSIVC8kmvUqmk4eGhTL8fxWJJfRY23an0
-                        VlQsFq2d17N7fkN9PezdDqyHKXfAEs+z8+NUtPCmIKmCpXViNmMOYHPZ/+YAnGHnWm6xlIMIWnhz
-                        woYvQGcRdMASz9Kw1sa0feLXYuFWLp5gB3RW9r85AEeY2NIIvZCDEboN9BzoKIIOWGJrC1JbI/2s
-                        X4ul9zcAmkTQAQtKJXs3jLgy5c6GLUBnZf+bA3BAoWjnR8mlB43Y+p4AaA4/cYAFBUu3rLkUdHde
-                        CdAdCDpggWdpmjwP0+0AuhO/PQALCpYWsuVmhJ6X8wDQNIIOWODclDsL2oCuQ9ABK3ISYmsIOtBt
-                        CDpgga2BdV4G6O69QQHcR9ABG6wFPR8hNYzQga5D0AELyN+9+J4AnUXQASvsjKxzsxbNwnnEcZz1
-                        qwC2FIIOWODlpsR22Jhyz8vlA2CrIOiADdbilZM3BhZOg5wDnUXQgRzJSc5lLMw4RBFT7kAnEXTA
-                        Amuj0bwU3cKJsI0t0Fn8xAEW2OqwjZGxnfOwc5xGEGT9UoAtg6ADCdmMcJyXoFt6i5KXNyjAVkDQ
-                        gYSsrubOya1etkLMrWtA5xB0wAJrAczJiNa11wNsBQQdsMHSID0vU9TG1sg6Hy8H2BIIOpAzeYm6
-                        rdF1FEVZvxRgSyDogAU2N1GJcxJAW6P0Rhhm/VKALYGgA3cpFdsImbGX9CgnC8lsLWizNn0vqVTI
-                        x5sdII8IOrqe7SnqYqH1ABnP4q1rOQm6MbaCbu97Uyoy2gc2QtCBdZTKrf1o2Jxyz8s1Z5sr1H3f
-                        t3IcnvcCbIygwwlRaDeC5WJr5bA5S5CXPdBji9/TvMw6AC4j6HBCbGl6+JZSqbUfjdjitHJ+Ruix
-                        vTcqJnnUo7CW9bcEyDWCjq5WLq0GJ15nVBub9v/z7qu0Fh+bC7+MMbm5dc3WmwtjjBqNRqJjFBMs
-                        iNvsv4V21kwAeUTQ0dX6K6sP/1hv9NcIS20fd6CvtfjYXpke5eRWL5uzBUmP1VNYavvvNqKN/1so
-                        F5K90QDygqCjqw31rS62aoT3/lIOw2Lbx50Yqrf0+bbvHQ/zMu0eWzwPI9UTLI7rL6cU9FI+3jwB
-                        SRF0dD3P8+T79z6msxGX2z7mnslqS59ve4Qe5miEbvVpcgkW2o30Tbf9d8NNgs6tcHAFQUfXKxQ9
-                        BeuM/BpR+yP0/ZPzLT1FzfoI3fKq/WTnYndK2q+3Nvtxy+TQtba/5kYj9FKxwa1wcAZBR9crFQvy
-                        g3tH6H5YafuYveW6Bvpbe0NgdfvXOM7Nk8psX8+Porjl6+kmDjVUmW37a9Ybvev+eU+R6+dwB0FH
-                        1xvoXZ2ivnth3GJtMNFxJ0ZaC6rtlelhwlXh1s4jiqzfR+7XW7uWXvLmE329xdrAun8+0MutcHAH
-                        QUfXGxtcHUEGd43Sq36fwrj9le57J1v7ZW/7XvggyEfQJSW+5Ww9rUy9j/VdbfvrGLPxm7uRvvYX
-                        2gF5Q9DR9baPr8amWrs3wElG6Q89MNPS59ve4S1PTylrNALro/QwjJpe/Ld39EzbX2exNqSNLogM
-                        9y1bfU1Algg6ut6uiRVJ0vLyyj0fW6y2H/TxgRmNDPc0/fm2p8hNHOdqy9TA0n7st3iep8AP7vt9
-                        M3FDY/032v46C7WhDT/GCB0uIejoevu2zUuS6rXaPTvGzS4PJzr24T3NRzqNaek8TbuHUZjK7XQN
-                        f/PR/0j5XKLjz23y38DIwEoLRwLyjaCj640M+CqXV6+Vr9TW3j9+dWF7omM/cbj9a7c2BOus3s+S
-                        79etL/4znqd6tbZh1A9NvpXo+Ffm1/9voFxsqLfc3i10QB4RdDhhx9hqZFbumnZfrA2p6ve1fdyJ
-                        gRsaH21+2t3WM8RvCcMwN/u6r74+o3q9Zv+cPE9+rX7PDICJ6hrra3+63Q97NF8dWfdjO0fbPy6Q
-                        RwQdTjg4tRrylZV7p1A3GqE166H9zY/i0nj0ad5G6VEUqZZC1I2kwA/WXLqYHDyZ6JiXZnds+LFd
-                        o9dT/T4BnUbQ4YQnDq3uIhZF0T2L467MTyY69tPHzr0/pX8/YcN+fP2cBV1a3RmvVq2m8qjXwA9U
-                        XVnR4twNPbzz1UTH2uzN3NQ4I3S4haDDCSMDdfX3rkZ3fmFhzccuzu5UI2p/X/eewoqOHmhuNJrG
-                        IrawEeZqtfstsYlVr9fk+3Ur5xdFkYLAV7W6ouXlZT0wcUoFr/03DFFc0uW59d/MDfctqlKyu2of
-                        yBpBhzOmtq9ef62urNxzLfa9G1OJjv38w++pUGxuK9g0rnn7lm8Zs+XWc85rtarq9ZoajaDpUbsx
-                        RmEYyvd9VWtV1WpVBUFw8/tndHT32UTndvb6lKINNhbaOdL+g16AvCLocMYzD9/+Jb2wuLjmYyev
-                        7E907OG+BX1gT3Ofa/WRozflNei33BnnWq2qlZVl+fWagiBQEPgKgkC+76vu11Wv1VStrmhlZfn9
-                        NwF3P9zmwPaL6u9JtgL95NX9G35s37YrWX/LAOsIOpxxYMeM+vtWp9YX59dOuy/VBzW9PJbo+J/5
-                        0LsqFO7/CJZGCte849jkZm/3Zhhj1AjD92MeBL4ajdVNZMJo80sIxUKoD+4/kejrTy+N3dwh7l6D
-                        lRVtG5rL+lsEWEfQ4ZQHb65Ib4ShFhfX7gJ26vIDiY491LuiB/ffP6pB0LD65LVb6i0+0KRbPTT1
-                        buLr26c2GZ0f2f1e1i8RSAVBh1M+9tCF9//3jem110nPzezRcr0/0fF/8Jl31Nd7/xXvadw5HjQa
-                        inK4OM6m/p6qju1uf992SVr2+3Vueve6H/MU68D2Cy0eEegOBB1OGRn0tX1sdfFaFIaam5tf8/Hv
-                        XDia8CsY/eBzl+77WWEjnQer1KouP+7T6NnDr6tYSPam5Y3zR7XRw1j2bruicjE/D70BbCLocM4n
-                        nrw9Mp+ZnZWJb4+Xz01PJX5O+sEdN/TQBzaPTr2eTniDwP5Tz/Li2O4z2j48m+gYC7UhnZ/e+I6G
-                        o7vey/plAqkh6HDOsT3XNT66ujgujiLNzK6NxJvnDyf+Gp996oT6+zaeel+NbjpbttZq7o3SR/oW
-                        9fgD7yQ+znfOH9nwY7tGr2tikMVwcBdBh5O++8O3H6oyOzu7ZvvU87NTiVe8F7xYP/JdZ1Xc5N70
-                        RkpPSvN9t0bppUKojx17RZ6SvaYbS+O6OLtrw48/vi/Zynkg7wg6nHRkalrbRm+PoC9fWfvUtJdP
-                        PZ74a+waW9APfPS6PG/967X1enpP8lpZqSY/SA54ntHzD35TQ73JHmMam4JeOvXEhh+fGr+q0YHF
-                        Fo4IdB+CDmd990duRzzw/TVT70v1wU2nZ5v10N4revbR9eNqjEntSWmNRiO1hXed9NShNzQ5PJP4
-                        ON85f2TTp+oxOsdWQNDhrA/snNEDu26P0memZ9ZMvR+/dEQLG2w+0ornHzmtI/vWD3cam8zcsryS
-                        bFSbtYemTumghVvI5qojevvyBzb8+KHJcxruW8765QKpI+hw2ueeP6VS6fZ17iuX1275+dKpJxTF
-                        ze3Rvpkf/thxTa3zHJA0p93jOE71+Gk6tvu0HtuXfBFcGBX10skPbvjx/p6qnjjwdtYvF+gIgg6n
-                        DfQG+vgHb28D6weBrtxxPX1+ZVgvnnyinUPf4wufflMHpu4dqUdhelPj1WpNYQqPME3Tsd2n9cEH
-                        bETW09fe+fCGW7xK0kePvq5SofsvTQDNIOhw3nMPX9LY0O2Fa0tLS5q/Y8OZS3M79ebF5LeySdKP
-                        fvy4Hj8Srrl2Xq2mu4BteWk5tWv1tj2y96SlmEvfPndU1xY2ft75kV1ntW0w2X3tQDch6NgSfuxT
-                        76lQvP2f+/UbN9bcz/3mhaO6OLvTytf6vg+f0Cc+tKJbi9+NMak8ge2WOI5Vzfmq94IX6bkjr+iR
-                        PSetHO+9G3s2vW4+WFlhIRy2HIKOLWF8pK6/+Nzavd0vXb6ixh3T4S+efELXFrdZ+XrPHHtPP/T8
-                        DZVvXr9Pe5TuB4H8nF5Pr5R8feaxF7V3ws4jSy/PTerldx/b8OPFQqjnH/ymioXuuhQBJEXQsWU8
-                        duCGHj54O+BxFOnihYuKwtVf/LEp6k/fespa1I9MXdNf/ey72rGtpDiKZUy6m8Esr1TXvEHJg10j
-                        1/S9j/+ZxvoXkh9MqzH/2okPy2zyq+vZw6+zqh1bkmfOfL47Lr4Blvzybz2oucXbce0pl7Vv3773
-                        p+QLXqSPP/RN7RiebvdL3OPlk/v19eMTKvf0pv76RkZHVCxk+169UvL1oYPHtW/isrVjNhPzwzvP
-                        6kMHjmf62oGsEHRsOVW/qF/+raPy/dtTspXeXu3dM6XCHSF8/sFvaPfodWtfd7Haq99/7TFNz5dT
-                        fX2e52lkeHjNmoFOOjR5To8/cEI9JXtb316Y2aUXTn5o08+ZGJzVZx59MZPXDOQBQceWdG1uSL/6
-                        e3sUhbdH6r29vdqzd48Kd2zl+sT+4zq666zVr31hZrv+9I1DWqwmv/99I57naWRkeM0blLTtGb+q
-                        xx84oaFeu9Pdb148rDfv89jbwcqKPv3oi+ot+x17vUDeEHRsWeevj+g/f3mX4jser9rX26upqak1
-                        o9tDk+f01KHvWP/671zZrZfeekDVejrR9QoFjQwPpR71qbGrenjvuxofmLd63Fv7s1+Y2bXp5w1U
-                        qvrMoy+qt5zPRYFApxB0bGmnL4/pS1/ZId1xH3epXNbePVMql29Pje8YmdbHjnxL5ZL9RWfnbmzT
-                        K+/u1/X53jVvLmwoFDwND9mffi8WIu3fdlEPTp3WYK/9Ffz1RkV/duIpzS6Pbvp5A5WqPvXIi+rv
-                        IeYAQceW9/aFcf3mV3eseSRpoVDQ7t271d9/+4Ef/T01PXvkNW0fSmezEr9R0Zvn9+ndK+OaWyrJ
-                        5hNSB4cG1VNOdu1+oFLV9uFZbR+e057xK6qU0tmn/srCpF5654MKop5NP6+vXNNnHnuBmAM3EXRA
-                        0rnrY/ovX9mlRmPtvcs7d+zQ8Mjwmj97aOqUlX3I7+fawqjOXt2uy7PDmluqyG94iY7X21tRf39/
-                        U587UKlqdGBRo32LGhtc1MTgvPo6EM5Xzj6iU1f33/fzKsUFffKhVzUy2N0PqAFsIujATfPLffq1
-                        3zuoldraafWh4WHt2DG5ZrHcxOCsnj3ybQ1WOhcUYzw1oqJW/IpqQY/qjYrqQUnGNB/64X5flfLa
-                        Ny2ejEqlSOViQz3FhtXV6c2ar67uqb94v6ffGakQX9X3PvmGhvvTe5Id0I0IOnAHP+jRr/6/w5qZ
-                        Xxv1Urmsqd27VKlU1vz50V1n9MjekyoX87WhS7fww4q+fe6ozlzfK2nzNyZhI1QhvqTPPfeWesrs
-                        AgfcjaAD6/hvf/qwTr53b6S3T27X2Ojomj/rKQV6ZO8pHdlp9/Y2l0VxUW9fPqi3Lx1SFJfu+/kL
-                        i4uaGLimz30s/UsdQLci6MAGXnhrn/7klf57Vp739/dr544dKpXXhmigUtVDU+/q0I7zWZ96bkVx
-                        Ue9e26e3Lx1SvXH/XfOiMNL0jSt69pEbevrIpaxPH8g1gg5s4tr8kH79y3tVrd81xet5Gh8b08TE
-                        uDxv7VRxf09Nx3af1qEdF3hAyE2NqKyTVw/oncv7FYQ9Tf2dpaUlBdVpff6TZzQ+XGvq7wBbGUEH
-                        7qPRKOg3Xzikk+fuvZe7WCppcts2DQ3fu5irXGro6M6zmhq/qrGBxaxfRiaml8d1YXqHTl97QGET
-                        U+uSVKvWdGP6ug7truqHnzsjr8CvKKAZBB1o0vnrY/rtF3ZrbvHea+t9vb3atm2b+u64b/1O/T1V
-                        TY1f1+7x69o1Ym9/+LwJo6KuLEzq8uykLs3uuO+95Hfyg0A3rt9QT7GuH3zusg7ssPOENmCrIOhA
-                        i751cpf+6JUx+cG90+m9lYrGJyY0ODiw4d8vFkJNDM5rcmRW24dntW1wVsVCuo9WTUsjKunG4oRu
-                        LIzp+tKEZpdHNn0a2noCP9DMzIzCsKZPPzWtJw66+4YHSBNBB9r0B68e0Csn+u7ZjEaSyuWyxsfH
-                        NXLXpjQbmRic1cTggoYHljXWv6iJwbmsX949wrik2eURzVeHNbc8rPmVYc1VR9o+XrVa08zsrKKG
-                        r2ceXtZ3Pc5iQiAJgg4k9OVXD+rVd3rVWGfEXigWNTQ4qOHhIfX19bV03JG+RfX2BCoVQpWK0Zp/
-                        esk2jduQMavhDqPi6v/f/N9L/qCqfmvnv+7xY6PF5SXNzc7J82I9/eCyPvH4uXReDLDFEHTAkq+8
-                        tl+vnxpQtbb+JjPFYlHDw8MaHhpSpbfS4tG7W+AHmpuf19LSkgb7C3r2kXl95Ci3oQE2EXTAsuPn
-                        d+sbb43r0nSsOFr/trVSqaT+vj71Dwyov79PpVJzK8C7Sb3uq1araWlxUUGjoantBT378HUd23sj
-                        61MDnETQgZQEYVkvHN+rt94b0OxiKLPJ49PKpZL6+/tV6etVpadHlZ6K9UeepimO4/cDXqtWVavX
-                        ZSRtHy3p0UNLeubYRZWK3JMPpImgAx2w4vfp6yemdPpin27MhoqaeDZqsVhUT0+Penp6VCqXVPAK
-                        KhQK8jzv/X96BW91B3Rv9Z+e50mep8LNfdFv/fv7H7v5T6/Q/EV4ExvFcazYxDf/aRSFoeq1uvwg
-                        UN33FYWrlxkqPSVtG/W0f3dNHzl6SYO9PNoU6BSCDmTg5KUxnbkyoqszvZpbLGqlFik23fejONBX
-                        1MRwpEN7qnrkgWmNDbGjG5AVgg7kxJW5QV2eHtbVuQHNLZa1WC2o7hvVg1hh2MH71O+YASgVpWJB
-                        KhWNBvuMto0G2j1R077ti9o5vpz1twzAHdxbiQN0qV1jy9o1tn4k/9Mff1TVWnv3qo2Pj63755Xe
-                        XpWLt38FRHGsWq36/r9PjV3VXzj2ray/LQCaRNCBLcoz0p03tHtp3dwOoCO6ZxktAADYEEEHAMAB
-                        BB0AAAcQdAAAHEDQAQBwAEEHAMABBB0AAAcQdAAAHEDQAQBwAEEHAMABBB0AAAcQdAAAHEDQAQBw
-                        AEEHAMABBB0AAAfwPHQgBSuNUU0v77R2vNGRYVV62/hx9aRKpbLuh4rFgozMnZ+65nNDjevc3DFr
-                        r2Hb4FUNlOetHQ/AWp4583mT/DAAbnn5/PfL196sTyOXBgsn9eSeP8n6NAAnMeUOWHR+9igx38Ry
-                        fESXFg5nfRqAkwg6YNGZhaeyPoXcOz3zZNanADiJoAOWNKKyCsWBrE8j/0qjimJ+9QC2sSgOsGRm
-                        eVJLi4tZn0ZXmKuOa9vgdNanATiFoAOWBA2jpaWlrE+jKzRCL+tTAJzDvBcAAA4g6IAllXKQ9Sl0
-                        Db5XgH1MuQOWVEpVnXznZNan0RU++0Qt61MAnMMIHbBkdKCq/t5i1qeReyNDRQ32MkIHbCPogEVP
-                        HlvJ+hRy7+mHuBMASANBByz65AfPa/cko/SNTE0W9OyDl7I+DcBJ7OUOpOClt6d08Xp/1qeRK/sm
-                        V/SRBy9nfRqAswg6AAAOYModAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDA
-                        AQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEA
-                        cABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQA
-                        ABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQd
-                        AAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABB
-                        BwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA
-                        0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAH
-                        EHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDA
-                        AQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEA
-                        cABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAHEHQA
-                        ABxA0AEAcABBBwDAAQQdAAAHEHQAABxA0AEAcABBBwDAAQQdAAAH/H+8aoXzadhyCwAAACV0RVh0
-                        ZGF0ZTpjcmVhdGUAMjAxOS0xMS0yOFQyMToxMDowMyswMzowMB+T3gIAAAAldEVYdGRhdGU6bW9k
-                        aWZ5ADIwMTktMTEtMjhUMjE6MTA6MDMrMDM6MDBuzma+AAAAAElFTkSuQmCC" />
-                        </svg> </a>
-
-                </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
             </div>
+            <div class="col-8">
+                <div class="main-container">
+                
+                    <!-- IMG + TEXT CONTAINER -->
+                    <div class="container-img-text">
+                        <div class="container-jumbo">
+                            <div class="image-container">
+                                <img src="./assets/me.jpeg" class="rounded-circle img" alt="me">
+                            </div>
 
-        </div>
-        <div class=" col-xl-1" id=colonna> </div>
-    </div>
 
-    <!-- Main -->
 
-    <div class="row fill50">
+                            <div class="text-container">
+                                <h1 class="text-light">Hello! Thanks for coming by.</h1>
+                                <p class="text-light"> Now that you're here, how about to take a look at my projects on Github? 
+                                    If you want stay in touch with me, follow me on Twitter. 
+                                    For ask support about one of my App use the form below.</p>
 
-        <div class=" col-xl-2" id="colonna"> </div>
-
-        <div class="col-xl-8" id="colonna">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Scopri se il tuo podcast preferito può essere riprodotto.</h1>
-                    <div class="searchBar">
-                        <div class="md-form mt-0">
-                            <i class="material-icons mdc-button__icon">search</i>
-                            <input class="form-control" type="text" placeholder="Inserisci il nome del podcast"
-                                aria-label="Search" id="search-input">
-                        </div>
-                        <div id="result"> </div>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"><b>Maggiori informazioni</b></h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Podcast Player può riprodurre moltissimi podcast. <br>Purtroppo però, per via di una <a href="https://developer.amazon.com/it/docs/custom-skills/audioplayer-interface-reference.html#audio-stream-requirements" target="_blank" rel="noopener noreferrer">limitazione</a> imposta da Amazon,
-                                            non è possibile riprodurre trasmissioni ospitate su server che non utlizzano il protocollo <b>https</b>. <br>Mi dispiace che
-                                            il tuo podcast preferito sia tra queste.
-                                        </p>
-                                    </div>
+                            </div>
+                            <div class="social-container">
+                                <div class="social-icons">
+                                    <a href="https://twitter.com/matteo_spada">
+                                    <img class="social-image" src="./assets/twitter.svg" alt="twitter" height="30" width="30" />
+                                </a>
+                                <a href="https://github.com/matteospada">    
+                                <img class="social-image" src="./assets/github.svg" alt="github" height="50"
+                                        width="40" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
+                    <!-- FORM -->
+                    <div class="form-container">
+                        <form action="https://formspree.io/mrgyqvpr" method="POST">
+                            <div class="form-group">
+                                <label class="text-light" for="exampleFormControlInput1">Name</label>
+                                <input type="text" name="name" class="form-control" id="Input1"
+                                    >
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light" for="exampleFormControlInput1">Email address</label>
+                                <input type="email" name="_replyto"class="form-control" id="Input2"
+                                    >
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light" for="exampleFormControlTextarea1">Message</label>
+                                <textarea class="form-control" name="message" id="Textarea1" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
+            <div class="col-2">
+            </div>
         </div>
-
-        <div class=" col-xl-2" id="colonna"> </div>
-
-    </div>
-    <!-- Footer -->
-    <div class="row footer-position fill20">
-        <div class=" col-xl-1" id=colonna> </div>
-        <div class="col-xl-10" id=colonna>
-
-            <footer class="page-footer margin-footer">
-
-
-                <div class="footer-copyright text-center py-3">Podcast Player è una skill alexa sviluppata da
-                    <a href="mailto:matteo.spada@ymail.com" target="_blank" rel="noopener noreferrer">Matteo Spada</a>.
-                    Tutti i diritti sono riservati.
-                </div>
-
-
-            </footer>
-
-        </div>
-        <div class=" col-xl-1" id=colonna> </div>
-    </div>
-
-
-
-
-
-    <!-- Script -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="search.js"></script>
-
 </body>
 
 </html>

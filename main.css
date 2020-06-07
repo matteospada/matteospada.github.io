@@ -1,145 +1,99 @@
-html, body { height: 100%; margin: 0; }
+html, body {
+    background-color: #282C34;
+    height: 100%;
+}
 
-body {
-    background-color: #FFDE59;
-    font-family: 'Open Sans', sans-serif;
+.social-image {
+    margin: 3px;
+}
+
+.container-fluid {
+    min-height: 100%;
+    height: 100%;
+}
+
+.row {
+    min-height: 100%;
+    height: 100%;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
 }
 
 
-.navbar {
-  justify-content: flex-start;
+
+.main-container {
+    float: left;
+    height: 100%;
 }
 
-.fill50 { 
-    min-height: 50%;
-    height: 50%;
-}
-.fill20 { 
-  min-height: 20%;
-  height: 20%;
+
+.text-container {
+    display:inline;
 }
 
-.fill30 { 
-  min-height: 30%;
-  height: 30%;
+.image-container {
+    margin: 15px;
+    float: left;
 }
 
-#colonnax {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+.social-container {
+    height: 60px;
+}
+
+.social-icons {
+    float: right; 
+    flex-direction: row;
+}
+
+.form-container {
+    margin: auto;
+    width: 80%;
+    height: 30%;
+}
+
+
+.container-img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.container-jumbo {
+    margin: auto;
 
 }
 
-.searchBar {
-    margin-top: 5%;
-    margin-right: 20%;
-    margin-left: 20%
-} 
-.altezza {
-    height: 100px;
-}
 
-.md-form.mt-0{
-    display:flex;
-    align-items: center;  
+@media screen and (max-width: 1020px) {
+    .image-container {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .form-container {
+        width: 100%;
+        height: initial;   
+    }
+    .container-img-text {
+        height: initial;
+    }
   }
   
-  .material-icons.mdc-button__icon{
-    position:absolute;
+  @media screen and (max-height: 700px) {
+    .container-fluid {
+
+        height: initial;
+    }
+    .form-container {
+        width: 100%;
+        height: initial;
+    
+    }
+
   }
   
-  .mdc-button__icon + input{
-    padding-left: 25px;
-  }
-
-  .jumbotron {
-    background-color: transparent;
-    padding-top: 1.5em;
-  }
-
-  .display-4 {
-    font-size: 2rem;
-
-  }
-
-  .margin-footer {
-    margin-top: 2.3rem;
-  }
-
-.material-icons.mdc-button__icon {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-h1 h2 h3 h4 h5{
-  font-family: 'Raleway', sans-serif;
-}
-
-div p {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.footer-copyright {
-  font-family: 'Open Sans', sans-serif;
-}
-
-#result {
-  padding-top: 10px;
-}
-
-.form-control {
-  border-radius: 15px;
-}
-
-
-.main-box-height {
-  height: 600px;
-}
-/*
-.footer-position {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}*/
-
-a:link {
-	color: black;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: black;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: black;
-  text-decoration: none;
-}
-
-a:active {
-  color: black;
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 800px) {
-  .searchBar {
-    margin-top: 5%;
-    margin-right: 0%;
-    margin-left: 0%
-  }
-}
-
-
-@media screen and (max-width: 450px) {
-
-  .arrow {
-      visibility: hidden;
-  }
-
-  .display-4  {
-    font-size: 1.5rem;
-  }
-}
