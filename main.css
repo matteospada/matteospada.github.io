@@ -77,10 +77,14 @@ html, body {
   @media screen and (max-width: 900px) {
     .form-container {
         width: 100%;
-        height: initial;   
+        height: initial;
+        padding-bottom: 100;
     }
     .container-img-text {
         height: initial;
+    }
+    .footer {
+        height: 100px;
     }
   }
   
