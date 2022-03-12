@@ -1,0 +1,13 @@
+{
+    "applinks": {
+      "apps": [],
+      "details": [
+       {
+         "appID": "matteospada.it.airmemo",
+         "paths": [
+           "*"
+        ]
+      }
+    ]
+  }
+}
